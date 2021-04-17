@@ -6,4 +6,9 @@ class StaticPagesController < ApplicationController
 
   def help
   end
+  
+  def about
+  # => app/views/static-pages/home.html.erbのデフォルト呼び出しが
+  end
+  
 end
