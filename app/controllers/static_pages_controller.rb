@@ -11,4 +11,7 @@ class StaticPagesController < ApplicationController
   # => app/views/static-pages/home.html.erbのデフォルト呼び出しが
   end
   
+  def contact
+  end
+  
 end
