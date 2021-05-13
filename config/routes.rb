@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
   get 'users/new'
   root 'static_pages#home'
   # root 'application#hello'
@@ -18,6 +19,10 @@ Rails.application.routes.draw do
   # -> contact_path, contact_urlが使えるように
   
   get '/signup',   to: 'users#new'
+  
+  get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  delete '/logout',  to: 'sessions#destroy'
   
   resources :users
   
